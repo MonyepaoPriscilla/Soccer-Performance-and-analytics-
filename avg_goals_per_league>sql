@@ -1,0 +1,8 @@
+SELECT
+  League.name, 
+  ROUND(AVG( Match.home_team_goal +
+  Match.away_team_goal), 2) AS avg_goals_per_match
+  FROM Match 
+  JOIN League ON League.id = Match.league_id
+  GROUP BY League.name 
+  Order BY avg_goals_per_match DESC;
