@@ -1,0 +1,15 @@
+DATA CLEANING REPORT
+Dataset: European Soccer Database (2008-2016)
+Analyst: Priscilla Monyepao
+Date: April 2026
+
+FINDING 1: Zero NULL values found in 25,979 match records
+home_team_goal and away_team_goal are fully complete ✓
+
+FINDING 2: Zero NULL values in 11,060 player records
+height and weight columns are fully complete ✓
+
+FINDING 3: Shared player names detected
+10 player names appear more than once (e.g. "Danilo" = 7 different players)
+RECOMMENDATION: Always use player_api_id for joins, not player_name
+ CONCLUSION: Dataset is high quality and ready for analysis
